@@ -40,7 +40,8 @@ if ('getBattery' in navigator || ('battery' in navigator && 'Promise' in window)
       battery.addEventListener('dischargingtimechange', onDischargingTimeChange);
       battery.addEventListener('levelchange', onLevelChange);
     })
-};
-var elem = document.getElementById("myBar");
+    var elem = document.getElementById("myBar");
 var width=level*100;
 elem.style.width = width + "%";
+
+};
