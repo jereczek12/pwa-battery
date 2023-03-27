@@ -39,9 +39,10 @@ if ('getBattery' in navigator || ('battery' in navigator && 'Promise' in window)
       battery.addEventListener('chargingtimechange', onChargingTimeChange);
       battery.addEventListener('dischargingtimechange', onDischargingTimeChange);
       battery.addEventListener('levelchange', onLevelChange);
+      var elem = document.getElementById("myBar");
+    var width=battery.level*100;
+    elem.style.width = width + "%";
     })
-    var elem = document.getElementById("myBar");
-var width=battery.level*100;
-elem.style.width = width + "%";
+    
 
 };
