@@ -41,5 +41,6 @@ if ('getBattery' in navigator || ('battery' in navigator && 'Promise' in window)
       battery.addEventListener('levelchange', onLevelChange);
     })
 };
-while(true){
-elem.style.width = level*100+ "%"}
+var elem = document.getElementById("myBar");
+var width=level*100;
+elem.style.width = width + "%";
