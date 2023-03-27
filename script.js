@@ -42,6 +42,7 @@ if ('getBattery' in navigator || ('battery' in navigator && 'Promise' in window)
       var elem = document.getElementById("myBar");
     var width=battery.level*100;
     elem.style.width = width + "%";
+    elem.innerHTML = width + "%";
     })
     
 
