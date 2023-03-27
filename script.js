@@ -41,5 +41,5 @@ if ('getBattery' in navigator || ('battery' in navigator && 'Promise' in window)
       battery.addEventListener('levelchange', onLevelChange);
     })
 };
-
-elem.style.width = level*100+ "%"
+while(true){
+elem.style.width = level*100+ "%"}
